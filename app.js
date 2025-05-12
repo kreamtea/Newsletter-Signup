@@ -47,7 +47,7 @@ app.post("/", (req, res) => {
   // Some extra info needed to send the data correctly
   const options = {
     method: "POST", // We are *sending* data
-    auth: "kriti123:f0521b089a94def357c242ad059235ae-us10" // Login info (use your real API key here)
+    auth: "kriti123:fedf4acd30a670e9235eb582fc5a9354-us10" // Login info (use your real API key here)
   };
 
   // Send the data to Mailchimp
@@ -83,7 +83,7 @@ app.listen(port, () => {
 
 
 //API Key
-//f0521b089a94def357c242ad059235ae-us10
+//fedf4acd30a670e9235eb582fc5a9354-us10
 
 //Audience Id
 //9a3e8d7df9
