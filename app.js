@@ -2,11 +2,14 @@
 const express = require("express");         // Helps us build the website
 const bodyParser = require("body-parser");  // Helps us read data from forms
 const https = require("https");             // Helps us talk to other websites using HTTPS
+const path = require("path");
+
 
 const app = express(); // Start the app
 
 // Tell the app to use the "public" folder to get images, CSS, etc.
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Tell the app to understand data that comes from a form (like text input)
 app.use(bodyParser.urlencoded({ extended: true }));
